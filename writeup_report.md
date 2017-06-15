@@ -76,7 +76,7 @@ Ultimately I searched on two scales (1.0 and 1.6) using YUV 3-channel HOG featur
 ### Video Implementation
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives.)
-Here's a [link to my video result](./project_video.mp4)
+Here's a [link to my video result](./project_video_output.mp4)
 
 
 #### 2. Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes.
@@ -101,5 +101,7 @@ Here's an example result showing the heatmap from a series of frames of video, t
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+One thing that can build up from this project is to make a more robust classifier. Most of the images used to train the classifier was withdrawn from the project video. Manually split the data between train and test dataset could improve the reliability of the test accuracy.
+
+Other thing is to find better parameters on the slide windows implementation to get smoothier bounding boxes.
 
